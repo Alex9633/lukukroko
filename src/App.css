@@ -1,0 +1,52 @@
+body {
+  background-color: ghostwhite;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  background-image: url("/public/img/pattern.png");
+  background-size: 100% auto;
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto;
+}
+
+.container {
+  max-width: 588px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.title {
+  font-family: "Kokoro", sans-serif;
+  color: #00b084;
+  font-size: 52px;
+}
+
+.logo {
+  width: 555px;
+  height: 626px;
+  margin-top: -55px;
+}
+
+.content {
+  font-family: "Jomolhari", serif;
+  font-size: 18px;
+  text-align: left;
+  line-height: 150%;
+  letter-spacing: 5%;
+  margin-top: -200px;
+}
+
+.subtitle {
+  font-size: 19px;
+  font-style: bold;
+  padding-bottom: 10px;
+}
+
+footer {
+  font-family: "Jaldi", sans-serif;
+  margin-top: 50px;
+  font-size: 12px;
+}
