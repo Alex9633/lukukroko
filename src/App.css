@@ -24,8 +24,7 @@ body {
   font-size: 52px;
 }
 
-.logo {
-  src: url("/public/img/logo.png");
+.logomain {
   width: 350px;
   height: 266px;
   margin-top: 40px;

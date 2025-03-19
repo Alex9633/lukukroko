@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="container">
       <div className="title">TULOSSA PIAN!</div>
-      <img alt="logo" className="logo" />
+      <img src="https://alex9633.github.io/lukukroko/img/logo.png" alt="logo" className="logomain" />
       
       <div className="content">
         <div className="subtitle">KROKON SUURI HYMY</div>
