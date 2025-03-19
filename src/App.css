@@ -25,9 +25,10 @@ body {
 }
 
 .logo {
-  width: 555px;
-  height: 626px;
-  margin-top: -55px;
+  width: 350px;
+  height: 266px;
+  margin-top: 40px;
+  margin-bottom: 85px;
 }
 
 .content {
@@ -36,7 +37,6 @@ body {
   text-align: left;
   line-height: 150%;
   letter-spacing: 5%;
-  margin-top: -200px;
 }
 
 .subtitle {
