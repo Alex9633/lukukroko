@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/lukukroko/static/css/main.98bbe277.css",
+    "main.js": "/lukukroko/static/js/main.acc2988b.js",
+    "static/js/453.dc6c3014.chunk.js": "/lukukroko/static/js/453.dc6c3014.chunk.js",
+    "static/media/pattern.png": "/lukukroko/static/media/pattern.89531bae73e1b08dbf0a.png",
+    "index.html": "/lukukroko/index.html",
+    "main.98bbe277.css.map": "/lukukroko/static/css/main.98bbe277.css.map",
+    "main.acc2988b.js.map": "/lukukroko/static/js/main.acc2988b.js.map",
+    "453.dc6c3014.chunk.js.map": "/lukukroko/static/js/453.dc6c3014.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98bbe277.css",
+    "static/js/main.acc2988b.js"
+  ]
+}
