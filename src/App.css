@@ -25,6 +25,7 @@ body {
 }
 
 .logo {
+  src: url("/public/img/logo.png");
   width: 350px;
   height: 266px;
   margin-top: 40px;
