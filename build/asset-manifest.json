@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/lukukroko/static/css/main.b39825fd.css",
-    "main.js": "/lukukroko/static/js/main.552af4e9.js",
+    "main.css": "/lukukroko/static/css/main.f8e9f957.css",
+    "main.js": "/lukukroko/static/js/main.84d6dacc.js",
     "static/js/453.dc6c3014.chunk.js": "/lukukroko/static/js/453.dc6c3014.chunk.js",
+    "static/media/logo.png": "/lukukroko/static/media/logo.b3f62a5a0db448adf164.png",
     "static/media/pattern.png": "/lukukroko/static/media/pattern.89531bae73e1b08dbf0a.png",
     "index.html": "/lukukroko/index.html",
-    "main.b39825fd.css.map": "/lukukroko/static/css/main.b39825fd.css.map",
-    "main.552af4e9.js.map": "/lukukroko/static/js/main.552af4e9.js.map",
+    "main.f8e9f957.css.map": "/lukukroko/static/css/main.f8e9f957.css.map",
+    "main.84d6dacc.js.map": "/lukukroko/static/js/main.84d6dacc.js.map",
     "453.dc6c3014.chunk.js.map": "/lukukroko/static/js/453.dc6c3014.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b39825fd.css",
-    "static/js/main.552af4e9.js"
+    "static/css/main.f8e9f957.css",
+    "static/js/main.84d6dacc.js"
   ]
 }
