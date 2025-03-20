@@ -13,19 +13,22 @@ body {
 
 .container {
   max-width: 588px;
+  width: 80%;
   margin: 0 auto;
   padding-top: 10vh;
   padding-bottom: 8vh;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .title {
   font-family: "Kokoro", sans-serif;
   color: #00b084;
-  font-size: 3.5vw;
+  font-size: 3.3vw;
 }
 
 .logomain {
-  width: 25vw;
+  width: 35vw;
   max-width: 350px;
   height: auto;
   margin-top: 5vh;
@@ -56,6 +59,12 @@ footer {
   .title {
     font-size: 6vw;
   }
+
+  .container {
+    width: 90%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
   
   .content {
     font-size: 3vw;
@@ -73,6 +82,12 @@ footer {
 @media (max-width: 480px) {
   .title {
     font-size: 8vw;
+  }
+
+  .container {
+    width: 95%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   
   .content {
