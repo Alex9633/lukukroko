@@ -55,7 +55,7 @@ footer {
   font-size: 0.8vw;
 }
 
-@media only screen and (max-width: 950px) {
+@media (max-width: 950px) {
   .title {
     font-size: 6vw;
   }
@@ -79,7 +79,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .title {
     font-size: 8vw;
   }
