@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/lukukroko/static/css/main.910523e7.css",
-    "main.js": "/lukukroko/static/js/main.325696d2.js",
-    "static/js/453.dc6c3014.chunk.js": "/lukukroko/static/js/453.dc6c3014.chunk.js",
-    "static/media/pattern.png": "/lukukroko/static/media/pattern.89531bae73e1b08dbf0a.png",
-    "index.html": "/lukukroko/index.html",
-    "main.910523e7.css.map": "/lukukroko/static/css/main.910523e7.css.map",
-    "main.325696d2.js.map": "/lukukroko/static/js/main.325696d2.js.map",
-    "453.dc6c3014.chunk.js.map": "/lukukroko/static/js/453.dc6c3014.chunk.js.map"
+    "main.css": "/static/css/main.0aff7131.css",
+    "main.js": "/static/js/main.05479b13.js",
+    "static/js/453.dc6c3014.chunk.js": "/static/js/453.dc6c3014.chunk.js",
+    "static/media/pattern.png": "/static/media/pattern.89531bae73e1b08dbf0a.png",
+    "index.html": "/index.html",
+    "main.0aff7131.css.map": "/static/css/main.0aff7131.css.map",
+    "main.05479b13.js.map": "/static/js/main.05479b13.js.map",
+    "453.dc6c3014.chunk.js.map": "/static/js/453.dc6c3014.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.910523e7.css",
-    "static/js/main.325696d2.js"
+    "static/css/main.0aff7131.css",
+    "static/js/main.05479b13.js"
   ]
 }
