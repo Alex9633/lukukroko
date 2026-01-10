@@ -1,105 +1,103 @@
-body {
-  background-color: ghostwhite;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-
-  background-image: url("/public/img/pattern.png");
-  background-size: 100% auto;
+.app {
+  min-height: 115vh;
+  background-image: url("../src/assets/pattern.png");
   background-repeat: repeat;
-  background-position: center top;
-  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
-.container {
-  max-width: 588px;
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 10vh;
-  padding-bottom: 8vh;
-  padding-left: 5%;
-  padding-right: 5%;
+.logo {
+  width: 280px;
+  max-width: 80%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1.3rem;
+  margin-bottom: 2.5rem;
+}
+
+.socials img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.2s ease;
+}
+
+.socials img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .title {
-  font-family: "Kokoro", sans-serif;
-  color: #00b084;
-  font-size: 3.3vw;
+  font-family: "Jua", sans-serif;
+  font-size: 32px;
+  color: #0D7566;
+  margin-bottom: 1.5rem;
 }
 
-.logomain {
-  width: 40vw;
-  max-width: 350px;
-  height: auto;
-  margin-top: 5vh;
-  margin-bottom: 8vh;
+.email-input {
+  width: 100%;
+  max-width: 487px;
+  padding: 1.1rem 1.5rem;
+  border: none;
+  font-family: "Afacad", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 24px;
+  background-color: #BBDDD2;
 }
 
-.content {
-  font-family: "Jomolhari", serif;
-  font-size: 1.3vw;
-  text-align: left;
-  line-height: 1.5;
-  letter-spacing: 0.05em;
+.email-input::placeholder {
+  color: white;
+  opacity: 75%;
+  font-size: 24px;
 }
 
-.subtitle {
-  font-size: 1.35vw;
-  font-weight: bold;
-  padding-bottom: 1vh;
+.submit-btn {
+  width: 241px;
+  height: 55px;
+  font-family: "Jua", sans-serif;
+  background-color: #16B084;
+  color: white;
+  border: none;
+  padding: 0.8rem 2.5rem;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-footer {
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 2rem 1rem;
   font-family: "Jaldi", sans-serif;
-  margin-top: 5vh;
-  font-size: 0.8vw;
+  font-size: 0.9rem;
+  color: #333;
 }
 
-@media (max-width: 950px) {
-  .title {
-    font-size: 6vw;
+@media (max-width: 480px) {
+  .app {
+    padding: 1rem;
+    max-width: 400px;
   }
 
-  .container {
-    width: 90%;
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-  
-  .content {
-    font-size: 3vw;
-  }
-  
-  .subtitle {
-    font-size: 3vw;
+  .logo {
+    max-width: 60%;
   }
 
-  footer {
-    font-size: 2.5vw;
+  .email-input {
+    width: 80%;
+  }
+
+  .submit-btn {
+    width: 180px;
   }
 }
-
-@media (max-width: 600px) {
-  .title {
-    font-size: 8vw;
-  }
-
-  .container {
-    width: 95%;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  
-  .content {
-    font-size: 4vw;
-  }
-  
-  .subtitle {
-    font-size: 4vw;
-  }
-
-  footer {
-    font-size: 3vw;
-  }
-}
-
