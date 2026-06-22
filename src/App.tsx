@@ -1,11 +1,14 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./App.css";
+import stickerLogo from "./assets/StickerLogo.png";
 import logo from "./assets/logo.png";
 import youtube from "./assets/youtube.png";
 import facebook from "./assets/facebook.png";
 import instagram from "./assets/instagram.png";
 import tiktok from "./assets/tiktok.png";
+import tableImg from "./assets/table.png";
+import tutorialImg from "./assets/tutorial1.png";
 
 // Emailjs Configuration
 const EMAILJS_SERVICE_ID  = "service_2doux08";
@@ -14,7 +17,6 @@ const EMAILJS_PUBLIC_KEY  = "cV8TXuPt265OG0roQ";
 
 const RECIPIENT_EMAIL = "lukukroko@gmail.com";
 
-// Links
 const SOCIAL_LINKS = [
   { href: "https://www.youtube.com/@LUKUKROKO", src: youtube, alt: "YouTube" },
   { href: "https://www.facebook.com/profile.php?id=61573951087624", src: facebook, alt: "Facebook" },
@@ -22,15 +24,12 @@ const SOCIAL_LINKS = [
   { href: "https://www.tiktok.com/@lukukroko", src: tiktok, alt: "TikTok" },
 ];
 
-// Helpers
 function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-// Types
 type SubmitStatus = "idle" | "sending" | "success" | "error";
 
-// Components
 function SocialLinks() {
   return (
     <nav className="socials" aria-label="Sosiaalinen media">
@@ -41,6 +40,92 @@ function SocialLinks() {
         </a>
       ))}
     </nav>
+  );
+}
+
+function WelcomeSection() {
+  return (
+    <section className="welcome-section">
+      <h1 className="main-heading">🎉 TERVETULOA MYSTEERIKIRJEKLUBIIN ✉️</h1>
+      <div className="welcome-text">
+        <p>Milloin viimeksi odotit kirjettä postista?</p>
+        <p>
+          Nykyään kaikki saapuu puhelimeen sekunneissa – sähköpostit, viestit ja
+          ilmoitukset. Mutta oikean kirjeen saapumisessa on jotain erityistä. Jotain, mitä ei
+          voi korvata näytöllä.
+        </p>
+        <p>
+          Joka kuukausi saat yllätyskuoren, jonka sisältö pysyy salaisuutena siihen asti,
+          kunnes avaat sen.
+        </p>
+      </div>
+      <ul className="features-list">
+        <li>📖 Mysteerikirje</li>
+        <li>🎨 Uniikki keräilytarra</li>
+        <li>💌 Kortteja, viestejä ja yllätyksiä</li>
+        <li>📚 Painettu tarina, joka liittyy Erilaiset Ystävät – sarjaan</li>
+        <li>✨ Uusi jakso tarinasta jokaisessa kirjeessä</li>
+      </ul>
+      <p className="follow-text">
+        Seuraa hahmojen seikkailuja, kun tarina etenee kuukausi kuukaudelta kirjeiden mukana.
+      </p>
+      <p className="star-divider">*</p>
+      <p className="delivery-info">
+        ✉️ Kaikki hinnat sisältävät toimituksen kaikkialle Suomeen.<br />
+        Ei lisämaksuja toimituksesta.
+      </p>
+    </section>
+  );
+}
+
+function HowToOrder() {
+  return (
+    <section className="how-to-section">
+      <div className="how-to-images">
+        <img src={tableImg} alt="Hinnasto" className="pricing-table-img" />
+        <img src={tutorialImg} alt="Tilausohjeet MobilePay" className="tutorial-img" />
+      </div>
+      <div className="how-to-steps">
+        <h2 className="how-to-heading">NÄIN TILAAT</h2>
+        <ol className="steps-list">
+          <li>
+            <span className="step-title">Avaa MobilePay</span>
+            <br />Etsi Ana Malinen tai syötä numero
+            <br /><strong>+358 41 480 8949</strong>
+          </li>
+          <li>
+            <span className="step-title">Valitse Tilauksesi</span>
+            <br />Syötä haluamasi tilauksen summa:
+            <ul>
+              <li>1 Mysteerikirje (Kk kokeilu) — 10 €</li>
+              <li>3 Kuukauden Tilaus — 26 €</li>
+              <li>6 Kuukauden Tilaus — 48 €</li>
+              <li>12 Kuukauden Tilaus — 86 €</li>
+            </ul>
+          </li>
+          <li>
+            <span className="step-title">Lisää Tietosi</span>
+            <br />Kirjoita maksun viestikenttään:
+            <ul>
+              <li>Koko nimesi</li>
+              <li>Postiosoitteesi</li>
+            </ul>
+          </li>
+          <li>
+            <span className="step-title">Suorita Maksu</span>
+            <br />Tarkista tiedot ja lähetä maksu MobilePayn kautta.
+          </li>
+          <li>
+            <span className="step-title">Haluatko lisätä tietoja?</span>
+            <br />Maksun jälkeen voit lähettää MobilePay-chatissa lisätietoja, korjauksia tai erityistoiveita.
+          </li>
+          <li>
+            <span className="step-title">Vahvistus</span>
+            <br />Kun maksu on vastaanotettu, vahvistan sen MobilePay-chatissa ja Mysteerikirjeklubiin tilauksesi aktivoidaan.
+          </li>
+        </ol>
+      </div>
+    </section>
   );
 }
 
@@ -55,7 +140,7 @@ function Title({ status }: TitleProps) {
     error:   "Jokin meni pieleen.",
   };
 
-  const text = statusText[status] ?? "Hauska tutustua!";
+  const text = statusText[status] ?? "Kiitos! ✨";
 
   return (
     <p
@@ -104,7 +189,6 @@ function SubscribeForm({ email, status, onChange, onSubmit }: SubscribeFormProps
   );
 }
 
-// Main
 function App() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<SubmitStatus>("idle");
@@ -146,10 +230,15 @@ function App() {
 
   return (
     <div className="app">
-      <img src={logo} alt="LUKUKROKO" className="logo" />
+      <img src={stickerLogo} alt="Erilaiset Ystävät" className="sticker-logo" />
       <SocialLinks />
-      <Title status={status} />
-      <SubscribeForm email={email} status={status} onChange={handleEmailChange} onSubmit={handleSubmit} />
+      <WelcomeSection />
+      <HowToOrder />
+      <div className="subscribe-wrapper">
+        <Title status={status} />
+        <SubscribeForm email={email} status={status} onChange={handleEmailChange} onSubmit={handleSubmit} />
+      </div>
+      <img src={logo} alt="LUKUKROKO" className="logo" />
       <footer className="footer">Copyright © 2026 LUKUKROKO</footer>
     </div>
   );
