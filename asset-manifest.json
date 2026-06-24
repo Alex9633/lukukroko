@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e3830588.css",
-    "main.js": "/static/js/main.1203ab83.js",
+    "main.css": "/static/css/main.8fd15a5d.css",
+    "main.js": "/static/js/main.5dca3f5a.js",
+    "static/media/slika_kraj.png": "/static/media/slika_kraj.e9c769fb6565a4e4afac.png",
     "static/media/logo.png": "/static/media/logo.e91209ad37217995afc4.png",
+    "static/media/tutorial1.png": "/static/media/tutorial1.7ec0d677fc78e226c713.png",
+    "static/media/StickerLogo.png": "/static/media/StickerLogo.c321bbe2dbeb7982c3a3.png",
     "static/media/pattern.png": "/static/media/pattern.89531bae73e1b08dbf0a.png",
+    "static/media/table.png": "/static/media/table.743f65874ab6dc8f6572.png",
     "index.html": "/index.html",
-    "main.e3830588.css.map": "/static/css/main.e3830588.css.map",
-    "main.1203ab83.js.map": "/static/js/main.1203ab83.js.map"
+    "main.8fd15a5d.css.map": "/static/css/main.8fd15a5d.css.map",
+    "main.5dca3f5a.js.map": "/static/js/main.5dca3f5a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3830588.css",
-    "static/js/main.1203ab83.js"
+    "static/css/main.8fd15a5d.css",
+    "static/js/main.5dca3f5a.js"
   ]
 }
