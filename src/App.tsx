@@ -46,28 +46,26 @@ function SocialLinks() {
 function WelcomeSection() {
   return (
     <section className="welcome-section">
-      <h1 className="main-heading">🎉 TERVETULOA MYSTEERIKIRJEKLUBIIN ✉️</h1>
+      <h1 className="main-heading">🎉 TERVETULOA MYSTEERIKIRJEKLUBIIN  ✉️</h1>
       <div className="welcome-text">
-        <p>Milloin viimeksi odotit kirjettä postista?</p>
         <p>
+          Milloin viimeksi odotit kirjettä postista? <br />
           Nykyään kaikki saapuu puhelimeen sekunneissa – sähköpostit, viestit ja
           ilmoitukset. Mutta oikean kirjeen saapumisessa on jotain erityistä. Jotain, mitä ei
-          voi korvata näytöllä.
-        </p>
-        <p>
+          voi korvata näytöllä. <br />
           Joka kuukausi saat yllätyskuoren, jonka sisältö pysyy salaisuutena siihen asti,
           kunnes avaat sen.
         </p>
       </div>
       <ul className="features-list">
-        <li>📖 Mysteerikirje</li>
+        <li>📬 Mysteerikirje</li>
         <li>🎨 Uniikki keräilytarra</li>
         <li>💌 Kortteja, viestejä ja yllätyksiä</li>
-        <li>📚 Painettu tarina, joka liittyy Erilaiset Ystävät – sarjaan</li>
+        <li>📖 Painettu tarina, joka liittyy Erilaiset Ystävät – sarjaan</li>
         <li>✨ Uusi jakso tarinasta jokaisessa kirjeessä</li>
       </ul>
       <p className="follow-text">
-        Seuraa hahmojen seikkailuja, kun tarina etenee kuukausi kuukaudelta kirjeiden mukana.
+        Seuraa hahmojen seikkailuja, kun tarina etenee kuukausi<br/>kuukaudelta kirjeiden mukana.
       </p>
       <p className="star-divider">*</p>
       <p className="delivery-info">
@@ -88,12 +86,12 @@ function HowToOrder() {
       <div className="how-to-steps">
         <h2 className="how-to-heading">NÄIN TILAAT</h2>
         <ol className="steps-list">
-          <li>
+          <li className="steps-list-item">
             <span className="step-title">Avaa MobilePay</span>
             <br />Etsi Ana Malinen tai syötä numero
             <br /><strong>+358 41 480 8949</strong>
           </li>
-          <li>
+          <li className="steps-list-item">
             <span className="step-title">Valitse Tilauksesi</span>
             <br />Syötä haluamasi tilauksen summa:
             <ul>
@@ -103,7 +101,7 @@ function HowToOrder() {
               <li>12 Kuukauden Tilaus — 86 €</li>
             </ul>
           </li>
-          <li>
+          <li className="steps-list-item">
             <span className="step-title">Lisää Tietosi</span>
             <br />Kirjoita maksun viestikenttään:
             <ul>
@@ -111,15 +109,15 @@ function HowToOrder() {
               <li>Postiosoitteesi</li>
             </ul>
           </li>
-          <li>
+          <li className="steps-list-item">
             <span className="step-title">Suorita Maksu</span>
             <br />Tarkista tiedot ja lähetä maksu MobilePayn kautta.
           </li>
-          <li>
+          <li className="steps-list-item">
             <span className="step-title">Haluatko lisätä tietoja?</span>
             <br />Maksun jälkeen voit lähettää MobilePay-chatissa lisätietoja, korjauksia tai erityistoiveita.
           </li>
-          <li>
+          <li className="steps-list-item">
             <span className="step-title">Vahvistus</span>
             <br />Kun maksu on vastaanotettu, vahvistan sen MobilePay-chatissa ja Mysteerikirjeklubiin tilauksesi aktivoidaan.
           </li>
