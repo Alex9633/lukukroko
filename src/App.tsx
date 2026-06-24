@@ -9,6 +9,7 @@ import instagram from "./assets/instagram.png";
 import tiktok from "./assets/tiktok.png";
 import tableImg from "./assets/table.png";
 import tutorialImg from "./assets/tutorial1.png";
+import endImg from "./assets/slika_kraj.png"
 
 // Emailjs Configuration
 const EMAILJS_SERVICE_ID  = "service_2doux08";
@@ -63,6 +64,8 @@ function WelcomeSection() {
         <li>💌 Kortteja, viestejä ja yllätyksiä</li>
         <li>📖 Painettu tarina, joka liittyy Erilaiset Ystävät – sarjaan</li>
         <li>✨ Uusi jakso tarinasta jokaisessa kirjeessä</li>
+        <li>🍵 teepussi ja</li>
+        <li>🧩 palapelejä</li>
       </ul>
       <p className="follow-text">
         Seuraa hahmojen seikkailuja, kun tarina etenee kuukausi<br/>kuukaudelta kirjeiden mukana.
@@ -187,6 +190,12 @@ function SubscribeForm({ email, status, onChange, onSubmit }: SubscribeFormProps
   );
 }
 
+function EndImage() {
+  return (
+    <img src={endImg} alt="" className="end-img" />
+  );
+}
+
 function App() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<SubmitStatus>("idle");
@@ -232,6 +241,7 @@ function App() {
       <SocialLinks />
       <WelcomeSection />
       <HowToOrder />
+      <EndImage />
       <div className="subscribe-wrapper">
         <Title status={status} />
         <SubscribeForm email={email} status={status} onChange={handleEmailChange} onSubmit={handleSubmit} />
