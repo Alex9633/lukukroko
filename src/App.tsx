@@ -3,13 +3,13 @@ import emailjs from "@emailjs/browser";
 import "./App.css";
 import stickerLogo from "./assets/StickerLogo.png";
 import logo from "./assets/logo.png";
-import youtube from "./assets/youtube.png";
-import facebook from "./assets/facebook.png";
 import instagram from "./assets/instagram.png";
 import tiktok from "./assets/tiktok.png";
 import tableImg from "./assets/table.png";
 import tutorialImg from "./assets/tutorial1.png";
-import endImg from "./assets/slika_kraj.png"
+import stamp_iproi from "./assets/stamp_iprio.png";
+import certifications from "./assets/certifications.png";
+
 
 // Emailjs Configuration
 const EMAILJS_SERVICE_ID  = "service_2doux08";
@@ -19,8 +19,6 @@ const EMAILJS_PUBLIC_KEY  = "cV8TXuPt265OG0roQ";
 const RECIPIENT_EMAIL = "lukukroko@gmail.com";
 
 const SOCIAL_LINKS = [
-  { href: "https://www.youtube.com/@LUKUKROKO", src: youtube, alt: "YouTube" },
-  { href: "https://www.facebook.com/profile.php?id=61573951087624", src: facebook, alt: "Facebook" },
   { href: "https://www.instagram.com/lukukroko/", src: instagram, alt: "Instagram" },
   { href: "https://www.tiktok.com/@lukukroko", src: tiktok, alt: "TikTok" },
 ];
@@ -98,10 +96,10 @@ function HowToOrder() {
             <span className="step-title">Valitse Tilauksesi</span>
             <br />Syötä haluamasi tilauksen summa:
             <ul>
-              <li>1 Mysteerikirje (Kk kokeilu) — 10 €</li>
-              <li>3 Kuukauden Tilaus — 26 €</li>
-              <li>6 Kuukauden Tilaus — 48 €</li>
-              <li>12 Kuukauden Tilaus — 86 €</li>
+              <li>1 Mysteerikirje (Kk kokeilu) — 13 €</li>
+              <li>3 Kuukauden Tilaus — 32 €</li>
+              <li>6 Kuukauden Tilaus — 58 €</li>
+              <li>12 Kuukauden Tilaus — 104 €</li>
             </ul>
           </li>
           <li className="steps-list-item">
@@ -137,11 +135,11 @@ interface TitleProps {
 function Title({ status }: TitleProps) {
   const statusText: Partial<Record<SubmitStatus, string>> = {
     sending: "…",
-    success: "Kiitos! ✨",
+    success: "✨ Kiitos! ✨",
     error:   "Jokin meni pieleen.",
   };
 
-  const text = statusText[status] ?? "Kiitos! ✨";
+  const text = statusText[status] ?? "✨ Newsletter ✨";
 
   return (
     <p
@@ -190,11 +188,14 @@ function SubscribeForm({ email, status, onChange, onSubmit }: SubscribeFormProps
   );
 }
 
-function EndImage() {
-  return (
-    <img src={endImg} alt="" className="end-img" />
-  );
-}
+ function EndImage() {
+   return (
+     <div className="bottom-imgs">
+     <img src={stamp_iproi} alt="" className="stamp" />
+     <img src={certifications} alt="" className="certs" />
+     </div>
+   );
+ }
 
 function App() {
   const [email, setEmail] = useState("");
@@ -241,11 +242,11 @@ function App() {
       <SocialLinks />
       <WelcomeSection />
       <HowToOrder />
-      <EndImage />
       <div className="subscribe-wrapper">
         <Title status={status} />
         <SubscribeForm email={email} status={status} onChange={handleEmailChange} onSubmit={handleSubmit} />
       </div>
+      <EndImage />
       <img src={logo} alt="LUKUKROKO" className="logo" />
       <footer className="footer">Copyright © 2026 LUKUKROKO</footer>
     </div>

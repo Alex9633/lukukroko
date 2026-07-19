@@ -197,9 +197,19 @@
   line-height: 1.2;
 }
 
-/* End Image */
-.end-img {
-  width: 45%;
+/* Bottom images */
+.bottom-imgs {
+  margin-top: 8rem;
+}
+.stamp {
+  width:14%;
+  margin: auto;
+  display: block;
+}
+.certs {
+  padding-top: 3rem;
+  width:30%;
+  margin: auto;
   display: block;
 }
 
@@ -218,7 +228,7 @@
   font-family: "Jua", sans-serif;
   font-size: 32px;
   color: #0D7566;
-  margin: 0 0 1.5rem;
+  margin: 8rem 0 1.5rem;
 }
 
 .title--sending { color: #0D7566; }
@@ -236,14 +246,14 @@
 }
 
 .email-input {
-  width: 100%;
+  width: 130%;
   padding: 1.1rem 1.5rem;
   border: 2px solid transparent;
   border-radius: 2px;
   outline: none;
   font-family: "Afacad", sans-serif;
   font-size: 22px;
-  color: white;
+  color: #0D7566;
   background-color: #BBDDD2;
   transition: border-color 0.2s ease, background-color 0.2s ease;
   box-sizing: border-box;
