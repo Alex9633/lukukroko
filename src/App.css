@@ -336,6 +336,14 @@
     width: 280px;
   }
 
+  .stamp {
+    width:40%;
+  }
+
+  .certs {
+    width:85%;
+  }
+
   .logo {
     width: 120px;
     max-width: 50%;
@@ -351,6 +359,7 @@
 
   .email-input {
     font-size: 18px;
+    width: 90%;
   }
 
   .submit-btn {
