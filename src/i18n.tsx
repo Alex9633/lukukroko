@@ -50,8 +50,8 @@ const fi = {
       { trait: "Utelias ja iloinen", text: "Keksii ratkaisun pulmaan kuin pulmaan – joskus hieman yllättävän." },
       { trait: "Kekseliäs ystävä", text: "Kysyy aina ”miksi?” ja löytää vastauksen yhdessä muiden kanssa." },
       { trait: "Rauhallinen tutkija", text: "Katselee, kuuntelee ja huomaa sen, minkä muut ohittavat." },
-      { trait: "Lämminsydäminen", text: "Pitää huolen, että jokainen tuntee olevansa tervetullut." },
-      { trait: "Luova unelmoija", text: "Näkee tarinoita kaikkialla ja maalaa maailman uusiksi." },
+      { trait: "Metsän paras hakkeri", text: "Aina yhteydessä wifiin! Nalle ratkaisee jokaisen teknisen pulman koko metsässä." },
+      { trait: "Nallen kummitussiili", text: "Tottu leijuu seinien läpi ja on aina ihan liian söpö. Hän on Nallen uskollinen lemmikki." },
     ],
   },
   news: {
@@ -118,8 +118,8 @@ const en: typeof fi = {
       { trait: "Curious and cheerful", text: "Has a solution for every puzzle – sometimes a rather surprising one." },
       { trait: "The inventive one", text: "Always asks “why?” and finds the answer together with the others." },
       { trait: "Calm explorer", text: "Watches, listens and notices what everyone else walks past." },
-      { trait: "Big-hearted", text: "Makes sure everyone feels welcome." },
-      { trait: "Creative dreamer", text: "Sees stories everywhere and paints the world anew." },
+      { trait: "The best hacker in the forest", text: "Always connected to Wi-Fi! Nalle can fix any tech problem in the whole forest." },
+      { trait: "Nalle’s ghost hedgehog", text: "Tottu floats through walls and is always super cute. Nalle’s loyal little pet." },
     ],
   },
   news: {
