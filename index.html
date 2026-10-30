@@ -6,8 +6,8 @@
     <title>Erilaiset Ystävät – Lukukroko</title>
     <meta name="description" content="Erilaiset Ystävät – lastensarja suomalaisesta kulttuurista, perinteistä, kielestä ja huumorista. Katso pilottijakso ja tutustu ystäviin." />
     <meta name="theme-color" content="#0D0C26" />
-    <link rel="icon" type="image/png" href="%PUBLIC_URL%/assets/favicon.png" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <link rel="canonical" href="https://www.lukukroko.fi/" />
     <link rel="alternate" hreflang="fi" href="https://www.lukukroko.fi/?lang=fi" />
     <link rel="alternate" hreflang="en" href="https://www.lukukroko.fi/?lang=en" />
@@ -18,20 +18,20 @@
     <meta property="og:description" content="Erilaisia. Mahtavia. Yhdessä! Katso pilottijakso ja tutustu ystäviin." />
     <meta property="og:image" content="https://www.lukukroko.fi/assets/og-image.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preload" as="font" type="font/ttf" href="%PUBLIC_URL%/assets/fonts/lugue.ttf" crossorigin />
-    <link rel="preload" as="font" type="font/woff2" href="%PUBLIC_URL%/assets/fonts/nunito-latin.woff2" crossorigin />
-    <link rel="preload" as="image" href="%PUBLIC_URL%/assets/logo-1400.webp" imagesrcset="%PUBLIC_URL%/assets/logo-700.webp 700w, %PUBLIC_URL%/assets/logo-1400.webp 1400w" imagesizes="(max-width: 760px) 92vw, 640px" />
+    <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/lugue.ttf" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/nunito-latin.woff2" crossorigin />
+    <link rel="preload" as="image" href="/assets/logo-1400.webp" imagesrcset="/assets/logo-700.webp 700w, /assets/logo-1400.webp 1400w" imagesizes="(max-width: 760px) 92vw, 640px" />
     <style>
       @font-face {
         font-family: "Lugue";
-        src: url("%PUBLIC_URL%/assets/fonts/lugue.ttf") format("truetype");
+        src: url("/assets/fonts/lugue.ttf") format("truetype");
         font-weight: 400;
         font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: "Nunito";
-        src: url("%PUBLIC_URL%/assets/fonts/nunito-latin.woff2") format("woff2");
+        src: url("/assets/fonts/nunito-latin.woff2") format("woff2");
         font-weight: 500 900;
         font-style: normal;
         font-display: swap;
@@ -39,7 +39,7 @@
       }
       @font-face {
         font-family: "Nunito";
-        src: url("%PUBLIC_URL%/assets/fonts/nunito-latin-ext.woff2") format("woff2");
+        src: url("/assets/fonts/nunito-latin-ext.woff2") format("woff2");
         font-weight: 500 900;
         font-style: normal;
         font-display: swap;
@@ -47,7 +47,7 @@
       }
       @font-face {
         font-family: "Fredoka";
-        src: url("%PUBLIC_URL%/assets/fonts/fredoka-latin.woff2") format("woff2");
+        src: url("/assets/fonts/fredoka-latin.woff2") format("woff2");
         font-weight: 500 700;
         font-style: normal;
         font-display: swap;
@@ -55,7 +55,7 @@
       }
       @font-face {
         font-family: "Fredoka";
-        src: url("%PUBLIC_URL%/assets/fonts/fredoka-latin-ext.woff2") format("woff2");
+        src: url("/assets/fonts/fredoka-latin-ext.woff2") format("woff2");
         font-weight: 500 700;
         font-style: normal;
         font-display: swap;
@@ -66,5 +66,6 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>

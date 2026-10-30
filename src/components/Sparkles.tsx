@@ -1,5 +1,5 @@
 // Twinkling four-point stars (from the logo), scattered over the empty space of the section they are placed in.
-import { CSSProperties, useEffect, useRef, useState } from "react";
+import { type CSSProperties, useEffect, useRef, useState } from "react";
 import { useLang } from "../i18n";
 
 const OBSTACLES = "h1,h2,p,a,span,button,img,form,iframe,.ep,.friend,.pilot,.news,.phone,.badge,.lang";

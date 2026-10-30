@@ -1,5 +1,5 @@
 // "Join us!" newsletter sign-up. Like the old site's form, it sends the subscriber's address to the Lukukroko inbox through EmailJS.
-import { FormEvent, useEffect, useRef, useState } from "react";
+import { type FormEvent, useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useLang } from "../i18n";
 import Sparkles from "./Sparkles";

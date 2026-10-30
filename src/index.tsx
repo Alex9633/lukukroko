@@ -1,4 +1,4 @@
-// Entry point: renders the app into the #root element of public/index.html.
+// Entry point: renders the app into the #root element of index.html.
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";

@@ -2,7 +2,7 @@
 import { useLang } from "../i18n";
 import Sparkles from "./Sparkles";
 
-const ASSETS = `${process.env.PUBLIC_URL}/assets`;
+const ASSETS = `${import.meta.env.BASE_URL}assets`;
 
 function Hero() {
   const { t } = useLang();

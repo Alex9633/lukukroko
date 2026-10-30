@@ -53,8 +53,9 @@ footer > .wrap {
   top: 0;
   z-index: 50;
   background: rgba(13, 12, 38, 0.86);
-  backdrop-filter: blur(10px);
+  /* Prefixed line first: Vite's CSS minifier drops a standard property that a prefixed copy follows. */
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 

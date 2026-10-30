@@ -1,5 +1,5 @@
 // Site texts in Finnish and English, and the language state every section reads them through.
-import { createContext, ReactNode, useContext, useEffect, useState } from "react";
+import { createContext, type ReactNode, useContext, useEffect, useState } from "react";
 
 const fi = {
   title: "Erilaiset Ystävät – Lukukroko",

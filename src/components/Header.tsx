@@ -1,6 +1,6 @@
 // Sticky top bar: social links, the section menu (a drop-down button on phones) and the FI/EN language switch.
 import { useEffect, useRef, useState } from "react";
-import { Lang, useLang } from "../i18n";
+import { type Lang, useLang } from "../i18n";
 
 const SECTIONS = [
   ["#pilotti", "pilot"],
