@@ -1,3 +1,99 @@
+/* Global base styles: brand colours and fonts, element resets and shared helper classes. */
+:root {
+  --night: #0D0C26;
+  --night-2: #16153A;
+  --night-3: #221F4F;
+  --mint: #0AF5B8;
+  --mint-deep: #006A7E;
+  --sun: #F3CD0D;
+  --flame: #FC3835;
+  --ember: #8B0000;
+  --violet: #A84CE6;
+  --violet-deep: #4A2391;
+  --ink: #FFFFFF;
+  --ink-soft: #CFD3EA;
+  --display: "Lugue", "Fredoka", "Arial Rounded MT Bold", system-ui, sans-serif;
+  --body: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap: 1180px;
+  --gutter: clamp(16px, 4vw, 40px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
+  background: var(--night);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-weight: 500;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--sun);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+  top: 8px;
+  background: var(--sun);
+  color: var(--night);
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 800;
+  z-index: 100;
+}
+
+.skip:focus {
+  left: 16px;
+}
+
+.wrap {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.vh {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  body {
+    font-size: 1.05rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
