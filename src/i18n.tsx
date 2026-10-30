@@ -20,7 +20,7 @@ const fi = {
     a: "Erilaisia.",
     b: "Mahtavia.",
     c: "Yhdessä!",
-    lead: "Tervetuloa suomalaisen kulttuurin, perinteiden, kielen ja huumorin maailmaan 🇫🇮 Jokainen jakso on uusi seikkailu täynnä oivalluksia, iloa ja yhdessä oppimista.",
+    lead: "Tervetuloa suomalaisen kulttuurin, perinteiden, kielen ja huumorin maailmaan. Jokainen jakso on uusi seikkailu täynnä oivalluksia, iloa ja yhdessä oppimista.",
     age: "Sopii katsottavaksi 5-vuotiaasta alkaen.",
     cta1: "Katso pilottijakso",
     cta2: "Tutustu hahmoihin",
@@ -88,7 +88,7 @@ const en: typeof fi = {
     a: "Different.",
     b: "Awesome.",
     c: "Together!",
-    lead: "Welcome to a world of Finnish culture, traditions, language and humour 🇫🇮 Every episode is a new adventure full of discoveries, joy and learning together.",
+    lead: "Welcome to a world of Finnish culture, traditions, language and humour. Every episode is a new adventure full of discoveries, joy and learning together.",
     age: "Suitable for children aged 5 and up.",
     cta1: "Watch the pilot",
     cta2: "Meet the characters",
@@ -149,13 +149,15 @@ interface LangState {
 
 const LangContext = createContext<LangState>({ lang: "fi", t: fi, setLang: () => {} });
 
+const CHOICE_KEY = "ey-lang-choice";
+
+// Finnish unless the link asks for English (?lang=en) or the visitor picked English before.
 function initialLang(): Lang {
   let saved: string | null = null;
   try {
-    saved = localStorage.getItem("ey-lang");
+    saved = localStorage.getItem(CHOICE_KEY);
   } catch {}
-  const browser = (navigator.language || "fi").toLowerCase().startsWith("fi") ? "fi" : "en";
-  const pick = new URLSearchParams(window.location.search).get("lang") || saved || browser;
+  const pick = new URLSearchParams(window.location.search).get("lang") || saved;
   return pick === "en" ? "en" : "fi";
 }
 
@@ -163,13 +165,17 @@ export function LangProvider({ children }: { children: ReactNode }) {
   const [lang, setLang] = useState(initialLang);
   const t = TEXTS[lang];
 
+  const chooseLang = (next: Lang) => {
+    setLang(next);
+    try {
+      localStorage.setItem(CHOICE_KEY, next);
+    } catch {}
+  };
+
   useEffect(() => {
     document.documentElement.lang = lang;
     document.title = t.title;
     document.querySelector('meta[name="description"]')?.setAttribute("content", t.desc);
-    try {
-      localStorage.setItem("ey-lang", lang);
-    } catch {}
     const url = new URL(window.location.href);
     url.searchParams.set("lang", lang);
     window.history.replaceState(null, "", url);
@@ -178,7 +184,7 @@ export function LangProvider({ children }: { children: ReactNode }) {
     if (canonical) canonical.href = new URL(`?lang=${lang}`, canonical.href).href;
   }, [lang, t]);
 
-  return <LangContext.Provider value={{ lang, t, setLang }}>{children}</LangContext.Provider>;
+  return <LangContext.Provider value={{ lang, t, setLang: chooseLang }}>{children}</LangContext.Provider>;
 }
 
 export function useLang() {

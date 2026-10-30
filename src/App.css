@@ -343,7 +343,7 @@ footer > .wrap {
 }
 
 .lead {
-  font-size: clamp(1.05rem, 1.35vw, 1.2rem);
+  font-size: clamp(1.15rem, 1.35vw, 1.3rem);
   color: var(--ink-soft);
   max-width: 50ch;
   margin: 0 0 32px;
@@ -776,11 +776,11 @@ footer > .wrap {
 }
 
 .friend.f4 {
-  --c: #A84CE6;
+  --c: #c574fb;
 }
 
 .friend.f5 {
-  --c: #FF8A3D;
+  --c: #7DDB67;
 }
 
 .friend:nth-child(2),
